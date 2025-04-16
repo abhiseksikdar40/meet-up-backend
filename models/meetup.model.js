@@ -8,6 +8,7 @@ const meetUpSchema = new mongoose.Schema({
     date: { type: Date, required: true },
     tags: [{ type: String }],
     speakers: [String],
+    dressCode: String,
     venue: { type: String, required: true },
     address: { type: String, required: true },
     restrictions: { type: String }
