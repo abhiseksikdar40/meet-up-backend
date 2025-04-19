@@ -7,8 +7,7 @@ const cors = require('cors')
 const app = express()
 
 const corsOptions = {
-    origin: "*",
-    Credentials: true
+    origin: "https://meet-up-app-wheat.vercel.app/"
 }
 
 app.use(express.json())
