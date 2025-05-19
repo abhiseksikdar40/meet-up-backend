@@ -1,9 +1,10 @@
 const { initializeMeetUpData } = require('./db/db.connect')
-initializeMeetUpData()
+
 
 const MeetUpApp = require('./models/meetup.model')
 const express = require('express')
 const cors = require('cors')
+initializeMeetUpData()
 const app = express()
 
 const corsOptions = {
@@ -100,6 +101,8 @@ async function updateEventDetails(eventId, dataToUpdate) {
         console.log("Error occured while updating event details.");  
     }
 }
+
+
 
 app.post("/events/update/:eventId", async (req, res) => {
     try {
