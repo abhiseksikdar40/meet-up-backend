@@ -2,8 +2,8 @@ const { initializeMeetUpData } = require('./db/db.connect')
 
 
 const MeetUpApp = require('./models/meetup.model')
-const express = require('express')
 const cors = require('cors')
+const express = require('express')
 initializeMeetUpData()
 const app = express()
 
