@@ -8,7 +8,7 @@ initializeMeetUpData()
 const app = express()
 
 const corsOptions = {
-    origin: "https://meet-up-app-wheat.vercel.app/"
+    origin: "http://localhost:5173/"
 }
 
 app.use(express.json())
